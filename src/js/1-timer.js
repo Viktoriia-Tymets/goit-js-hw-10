@@ -2,6 +2,8 @@ import flatpickr from "flatpickr";
 import iziToast from "izitoast";
 
 
+
+
 const datePicker = document.querySelector("#datetime-picker");
 const startBtn = document.querySelector("[data-start]");
 const daysEl = document.querySelector("[data-days]");
@@ -21,7 +23,7 @@ const options = {
     onClose(selectedDates) {
       console.log(selectedDates[0]); 
     
-    const selectedDate = selectedDates[0];
+      const selectedDate = selectedDates[0];
     const now = new Date();
 if (selectedDate <= now) {
     iziToast.error({
